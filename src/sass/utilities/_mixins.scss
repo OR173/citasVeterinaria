@@ -1,0 +1,42 @@
+@mixin tablet {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin telefono {
+    @media screen and (max-width: 576px) {
+        @content;
+    }
+}
+
+//breakpoints simples
+// 576px para teléfonos móviles
+// 768px para las tabletas
+// 992px para portátiles
+// 1200px para los grandes dispositivos
+
+//breakpoints completos
+// 0px a 320px mobil pequeño
+// 321px a 480px mobil grande
+// 481px a 768px tables pequeñas
+// 769px a 960px tables grandes
+// 961px a 1024px laptos pequeñas
+// 1025px a 1328px monitores grandes
+
+// // Small devices (landscape phones, 576px and up)
+// @media (max-width: 576px) { ... }
+
+// // Medium devices (tablets, 768px and up)
+// @media (max-width: 768px) { ... }
+
+// // Large devices (desktops, 992px and up)
+// @media (max-width: 992px) { ... }
+
+// // X-Large devices (large desktops, 1200px and up)
+// @media (max-width: 1200px) { ... }
+
+// // XX-Large devices (larger desktops, 1400px and up)
+// @media (max-width: 1400px) { ... }
+
+// @media screen and (max-width: 1400px) { ... }
