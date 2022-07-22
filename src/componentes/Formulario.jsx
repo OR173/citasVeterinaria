@@ -11,9 +11,19 @@ function Formulario() {   return( <>
 
     </p>
 
+    <form>
+        <div>
+            <label>Nombre de la mascota</label>
+            <input 
+                type="text"
+                placeholder=""
+            
+            />
+        </div>
+    </form>
+
     
-    
-    
+
     
     
     

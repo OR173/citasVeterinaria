@@ -3,7 +3,7 @@
 function Header() {
     return(
         
-        <h1 className="titulo">
+        <h1 className="text-4xl">
             Seguimiento Pacientes {''}
             <span className="">
                 Venterinaria
