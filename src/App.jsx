@@ -8,6 +8,13 @@ import ListadoPacientes from './componentes/Lista_Pacientes/ListadoPacientes.jsx
 function App() {
 
   const [pacientes, setPacientes] = useState([]);
+  const [paciente, setPaciente] = useState({});
+
+  const eliminarPaciente = (id) => {
+    const pacientesActualizados = paciente.filter(paciente => paciente.id !== id);
+
+    setPacientes(pacientesActualizados);
+  }
   
   return (
     
@@ -18,13 +25,17 @@ function App() {
         <div className='md:flex mt-12'>
           <Formulario 
 
-            pacientes = {pacientes}
+            pacientes = { pacientes }
             setPacientes = { setPacientes }
+            paciente = { paciente }
+            setPaciente = { setPaciente }
             
           />
           <ListadoPacientes 
 
-            pacientes={pacientes}
+            pacientes = { pacientes }
+            setPaciente = { setPaciente }
+            eliminarPaciente = { eliminarPaciente }
           
           />
         </div>

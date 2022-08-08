@@ -1,6 +1,9 @@
+
+
 import ListaPacientes from "./ListaPacientes.jsx";
 
-function ListadoPacientes({ pacientes }) {
+function ListadoPacientes({ pacientes, setPaciente, eliminarPaciente }) {
+
   return (
     <>
       <div className="md:w-1/2 lg:w-3/5 md:h-screen overflow-y-scroll">
@@ -16,10 +19,12 @@ function ListadoPacientes({ pacientes }) {
               </span>
             </p>
 
-            {pacientes.map((paciente) => (
+            {pacientes.map(paciente => (
                 <ListaPacientes 
-                    key={paciente.id} 
-                    paciente={paciente} 
+                    key = { paciente.id } 
+                    paciente = { paciente } 
+                    setPaciente = { setPaciente }
+                    eliminarPaciente = { eliminarPaciente }
                 />
             ))}
           </>
